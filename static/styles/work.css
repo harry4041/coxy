@@ -1,0 +1,42 @@
+.project{
+    padding: 25px 0px;
+    width: 100vw;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+}
+
+.project-description{
+    max-width: 500px;
+}
+
+.lightgray-section{
+    background: lightgray;
+}
+
+.gray-section{
+    background: gray;
+}
+
+.project-left{
+    animation: movingLeft 1.5s;
+}
+
+.project-right{
+    animation: movingRight 1.5s;
+}
+
+@keyframes movingLeft {
+    from {transform: translateX(15px); opacity: 0;}
+    to {transform: translateX(0px); opacity: 100;}
+}
+
+@keyframes movingRight {
+    from {transform: translateX(-15px); opacity: 0;}
+    to {transform: translateX(0px); opacity: 100;}
+}
+
+
+
