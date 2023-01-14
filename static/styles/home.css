@@ -33,3 +33,28 @@
 .welcome-object, #projects-header{
   margin: 0px;
 }
+
+#nav-list{
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.nav-list-item{
+    margin: 0px 25px;
+    color: white;
+    animation: moving 1.5s;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.nav-list-item:hover{
+    top: -5px;
+}
+
+@keyframes moving {
+    from {transform: translateY(15px); opacity: 0;}
+    to {transform: translateY(0px); opacity: 100;}
+
+}

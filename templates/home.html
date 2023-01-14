@@ -1,29 +1,21 @@
 {% extends 'base.html' %}
 
 {% block head %}
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
 {% endblock %}
 
 {% block content %}
 <main id="main">
     <div id="welcome-section">
-      <h1 class="welcome-object" id="welcome-header">Welcome...</h1>
+        <h1 class="welcome-object" id="welcome-header">Welcome...</h1>
         <p class="welcome-object" id="welcome-para">...to the big show!</p>
+        <ol id="nav-list">
+            <a href="{{ url_for('work') }}"><li class="nav-list-item">Work</li></a>
+            <a href="{{ url_for('about') }}"><li class="nav-list-item">About</li></a>
+            <a href="{{ url_for('contact') }}"><li class="nav-list-item">Contact</li></a>
+        </ol>
     </div>
 </main>
 
-    <h1>Hello World!</h1>
-    <p>Welcome to my portfolio!</p>
-    <h3>Bounce</h3>
-    <h5>Technologies</h5>
-    <p>Unity, C#, Firebase relatime database</p>
-    <h3>Ball buster</h3>
-    <h5>Technologies</h5>
-    <p>Unity, C#</p>
-    <h3>Pixel picker</h3>
-    <h5>Technologies</h5>
-    <p>Python flask/flask_auth, HTML, CSS, JavaScript</p>
-    <h3>Grapple</h3>
-    <h5>Technologies</h5>
-    <p>Unity, C#</p>
+
 {% endblock %}
