@@ -1,22 +1,48 @@
 {% extends 'base.html' %}
 
-{% block content %}
-    <h1>{% block title %} Work {% endblock %}</h1>
-    <h1>Work</h1>
-    <h2>Welcome to FlaskApp!</h2>
-    <h3>{{ utc_dt }}</h3>
+{% block title %}Work{% endblock %}
 
-<p>Welcome to my portfolio!</p>
-    <h3>Bounce</h3>
-    <h5>Technologies</h5>
-    <p>Unity, C#, Firebase relatime database</p>
-    <h3>Ball buster</h3>
-    <h5>Technologies</h5>
-    <p>Unity, C#</p>
-    <h3>Pixel picker</h3>
-    <h5>Technologies</h5>
-    <p>Python flask/flask_auth, HTML, CSS, JavaScript</p>
-    <h3>Grapple</h3>
-    <h5>Technologies</h5>
-    <p>Unity, C#</p>
+{% block head %}
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/work.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="project lightgray-section" id="first-section">
+    <div class="project-info project-left">
+        <h3 class="project-title">Pixel picker</h3>
+        <p class="project-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <h5>Technologies</h5>
+        <p style="font-style: italic;">Python flask, python auth, HTML, CSS, JavaScript</p>
+    </div>
+    <img class="project-image project-right" src="{{ url_for('static', filename='image/testimage.png') }}">
+</div>
+<div class="project gray-section" id="Second-section">
+    <img class="project-image project-left" src="{{ url_for('static', filename='image/testimage.png') }}">
+    <div class="project-info project-right">
+        <h3 class="project-title">Bounce</h3>
+        <p class="project-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <h5>Technologies</h5>
+        <p style="font-style: italic;">Unity, C#, Firebase</p>
+    </div>
+</div>
+<div class="project lightgray-section" id="third-section">
+    <div class="project-info project-left">
+        <h3 class="project-title">Grapple</h3>
+        <p class="project-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <h5>Technologies</h5>
+        <p style="font-style: italic;">Unity, C#</p>
+    </div>
+    <img class="project-image project-right" src="{{ url_for('static', filename='image/testimage.png') }}">
+</div>
+<div class="project gray-section" id="fourth-section">
+    <img class="project-image project-left" src="{{ url_for('static', filename='image/testimage.png') }}">
+    <div class="project-info project-right">
+        <h3 class="project-title">Ball buster</h3>
+        <p class="project-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <h5>Technologies</h5>
+        <p style="font-style: italic;">Unity, C#</p>
+    </div>
+</div>
+
+
 {% endblock %}
