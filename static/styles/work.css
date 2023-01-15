@@ -1,7 +1,7 @@
 .project{
     padding: 25px 0px;
     width: 100vw;
-    height: 450px;
+    height: 350px;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
@@ -14,14 +14,22 @@
 
 .project-image{
 max-width: 600px;
+max-height: -webkit-fill-available;
+}
+
+#mobile-games{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
 }
 
 .lightgray-section{
-    background: lightgray;
+    background: #CCCCCC;
 }
 
 .gray-section{
-    background: white;
+    background: #DDDDDD;
 }
 
 .project-left{

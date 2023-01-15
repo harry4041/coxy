@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="project lightgray-section" id="first-section">
+<div class="project light-gray-section" id="first-section">
     <div class="project-info project-left">
         <h3 class="project-title">Pixel picker</h3>
         <p class="project-description">
@@ -30,14 +30,20 @@
     <img class="project-image project-left" src="{{ url_for('static', filename='image/grapple.gif') }}">
     <div class="project-info project-left">
         <h3 class="project-title">Grapple</h3>
-        <p class="project-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <p class="project-description">
+            An ongoing project utilising systems built in to the Unity game engine to create a smooth, fast FPS game.
+        </p>
         <h5>Technologies</h5>
         <p style="font-style: italic;">Unity, C#</p>
     </div>
 </div>
 
-<div class="project lightgray-section" id="third-section">
-    <div class="project-info project-left">
+<div id="mobile-games">
+    <div class="project light-gray-section" id="third-section">
+    <div class="smaller-images">
+            <img class="project-image project-left" src="{{ url_for('static', filename='image/bounce.gif') }}">
+    </div>
+    <div class="project-info project-right">
         <h3 class="project-title">Bounce</h3>
         <p class="project-description">
             Bounce is a mobile game where the player controls the bottom ball with their finger and triess to stop the
@@ -51,18 +57,21 @@
         <h5>Technologies</h5>
         <p style="font-style: italic;">Unity, C#, Firebase</p>
     </div>
-    <img class="project-image project-right" src="{{ url_for('static', filename='image/bounce.gif') }}">
 </div>
 
-<div class="project gray-section" id="fourth-section">
-    <img class="project-image project-left" src="{{ url_for('static', filename='image/ballbuster.gif') }}">
+<div class="project light-gray-section" id="fourth-section">
+    <div class="smaller-images">
+            <img class="project-image project-left" src="{{ url_for('static', filename='image/ballbuster.gif') }}">
+    </div>
     <div class="project-info project-right">
-        <h3 class="project-title">Ball buster</h3>
-        <p class="project-description">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <h3 class="project-title">Block buster</h3>
+        <p class="project-description">
+            My take on the classic block buster game.
+        </p>
         <h5>Technologies</h5>
         <p style="font-style: italic;">Unity, C#</p>
     </div>
 </div>
-
+</div>
 
 {% endblock %}
