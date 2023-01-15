@@ -3,25 +3,49 @@
 {% block title %}About{% endblock %}
 
 {% block head %}
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/about.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/about.css') }}">
 {% endblock %}
 
 {% block content %}
-<main id="main">
-    <div id="welcome-section">
+<div class="main">
+    <div class="welcome-section">
         <div>
-             <img class="project-image project-right" style="width:auto; height:400px" src="{{ url_for('static', filename='image/me.jpg') }}">
+            <img class="project-image project-right" style="width:auto; height:400px"
+                 src="{{ url_for('static', filename='image/me.jpg') }}">
         </div>
         <div>
-            <h1 class="welcome-object" id="welcome-header">Who am I?</h1>
-            <h3 class="welcome-para">By trade I'm a shift technician at a power station. By passion - I am a developer. </h3>
+            <h1 style="color:white;">Who am I?</h1>
+            <h3 class="welcome-para">By trade I'm a shift technician at a power station. By passion - I am a
+                developer. </h3>
             <p class="welcome-object welcome-para">
-                Currently based in Cambridgeshire, I spend a lot of my time working on personal projects. These range from web pages
-                to Unity games to even some more hands on, mechanical projects like fixing up motorbikes. Though I've never had a
-                professional career working as a developer, that is what I am striving for. After all, they say if you love what you do
+                I am a 27 year old married man with two children and currently based in Cambridgeshire. I spend a lot of
+                my time working on personal projects. These range from web pages
+                to Unity games to even some more hands on, mechanical projects like fixing up motorbikes. Though I've
+                never had a
+                professional career working as a developer, that is what I am striving for. After all, they say if you
+                love what you do
                 you'll never work a day in your life.
             </p>
         </div>
     </div>
-</main>
+
+</div>
+<div class="main" style="background: #CCCCCC;">
+    <div class="knolege-section">
+
+        <h1 style="color:black;">What do I know?</h1>
+        <p class="welcome-object welcome-para" style="color:black;">
+            Currently based in Cambridgeshire, I spend a lot of my time working on personal projects. These range from
+            web pages
+            to Unity games to even some more hands on, mechanical projects like fixing up motorbikes. Though I've never
+            had a
+            professional career working as a developer, that is what I am striving for. After all, they say if you love
+            what you do
+            you'll never work a day in your life.
+        </p>
+
+    </div>
+
+</div>
+
 {% endblock %}

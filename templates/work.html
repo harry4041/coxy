@@ -3,7 +3,7 @@
 {% block title %}Work{% endblock %}
 
 {% block head %}
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/work.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/work.css') }}">
 {% endblock %}
 
 {% block content %}
@@ -18,7 +18,8 @@
                 the person who owns that pixel wins.
             </p>
             <p class="project-description">
-                Users are created and sign in using flask_auth along with SQLAlchemy. When they choose a pixel, that pixels
+                Users are created and sign in using flask_auth along with SQLAlchemy. When they choose a pixel, that
+                pixels
                 coordinates are saved against their profile.
             </p>
             <h5>Technologies</h5>
@@ -26,7 +27,8 @@
             <br>
             <a class="github" href="https://github.com/harry4041/pixel-picker">Github</a>
         </div>
-        <img class="project-image project-right" style="width=460" src="{{ url_for('static', filename='image/pixel-picker.png') }}">
+        <img class="project-image project-right" style="width=460"
+             src="{{ url_for('static', filename='image/pixel-picker.png') }}">
     </div>
 </div>
 
@@ -36,7 +38,8 @@
         <div class="project-info project-right">
             <h3 class="project-title">Grapple</h3>
             <p class="project-description">
-                An ongoing project utilising systems built in to the Unity game engine to create a smooth, fast FPS game.
+                An ongoing project utilising systems built in to the Unity game engine to create a smooth, fast FPS
+                game.
             </p>
             <h5>Technologies</h5>
             <p style="font-style: italic;">Unity, C#</p>
@@ -45,27 +48,31 @@
 </div>
 
 <div class="section gray-section">
-<div class="project" id="third-section">
-    <div class="project-info project-left">
-        <h3 class="project-title">Twitter-bots</h3>
-        <p class="project-description">
-            The road I travel the most is closed for roughly 3 months of the year due to flooding, and it isn't announced
-            anywhere that it's flooded. I also am not a fan  of getting to my car in the morning and realising too late
-            that the windscreen is frozen. Therefore I made a twitter-bot that tweets out every day at 5am telling me
-            if I have to deal with these things.
-        </p>
-        <p class="project-description">
-            Sadly these ceased to tweet in November as the Heroku package I was using started to charge, and it didn't
-            seem financially worth it!
-        </p>
-        <h5>Technologies</h5>
-        <p style="font-style: italic;">Python, tweepy, Heroku, API's</p>
-        <br>
-        <a class="github" href="https://twitter.com/FloodBotCambs">Twitter (Cambridgeshire)</a>
-        <a class="github" href="https://twitter.com/FloodBotLincs">Twitter (Lincolnshire)</a>
-    </div>
+    <div class="project" id="third-section">
+        <div class="project-info project-left">
+            <h3 class="project-title">Twitter-bots</h3>
+            <p class="project-description">
+                The road I travel the most is closed for roughly 3 months of the year due to flooding, and it isn't
+                announced
+                anywhere that it's flooded. I also am not a fan of getting to my car in the morning and realising too
+                late
+                that the windscreen is frozen. Therefore I made a twitter-bot that tweets out every day at 5am telling
+                me
+                if I have to deal with these things.
+            </p>
+            <p class="project-description">
+                Sadly these ceased to tweet in November as the Heroku package I was using started to charge, and it
+                didn't
+                seem financially worth it!
+            </p>
+            <h5>Technologies</h5>
+            <p style="font-style: italic;">Python, tweepy, Heroku, API's</p>
+            <br>
+            <a class="github" href="https://twitter.com/FloodBotCambs">Twitter (Cambridgeshire)</a>
+            <a class="github" href="https://twitter.com/FloodBotLincs">Twitter (Lincolnshire)</a>
+        </div>
         <img class="project-image project-right" src="{{ url_for('static', filename='image/twitterbot.png') }}">
-</div>
+    </div>
 </div>
 
 <div class="section light-gray-section">
@@ -74,20 +81,22 @@
             <img class="project-image project-left" src="{{ url_for('static', filename='image/bounce.gif') }}">
         </div>
         <div class="project-info project-right">
-        <h3 class="project-title">Bounce</h3>
-        <p class="project-description">
-            Bounce is a mobile game where the player controls the bottom ball with their finger and triess to stop the
-            bouncing ball from getting past. If it does then it's game over and time to start again.
-        </p>
-        <p class="project-description">
-            Though a simple game up front, it utilises a firebase realtime database to check if a user has played
-            from their device before, create a user tied to that device if not, and save/retrieve score data. Some of this
-            is tied up to the Unity front end to display user top scores.
-        </p>
-        <h5>Technologies</h5>
-        <p style="font-style: italic;">Unity, C#, Firebase</p>
+            <h3 class="project-title">Bounce</h3>
+            <p class="project-description">
+                Bounce is a mobile game where the player controls the bottom ball with their finger and triess to stop
+                the
+                bouncing ball from getting past. If it does then it's game over and time to start again.
+            </p>
+            <p class="project-description">
+                Though a simple game up front, it utilises a firebase realtime database to check if a user has played
+                from their device before, create a user tied to that device if not, and save/retrieve score data. Some
+                of this
+                is tied up to the Unity front end to display user top scores.
+            </p>
+            <h5>Technologies</h5>
+            <p style="font-style: italic;">Unity, C#, Firebase</p>
+        </div>
     </div>
-</div>
 </div>
 
 <div class="section gray-section">
@@ -95,13 +104,14 @@
         <div class="project-info project-right">
             <h3 class="project-title">Block buster</h3>
             <p class="project-description">
-            My take on the classic block buster game. Made in C# utilising a strict workflow and instantiating in specific
-            locations.
+                My take on the classic block buster game. Made in C# utilising a strict workflow and instantiating in
+                specific
+                locations.
             </p>
             <h5>Technologies</h5>
             <p style="font-style: italic;">Unity, C#</p>
         </div>
-         <div class="smaller-images">
+        <div class="smaller-images">
             <img class="project-image project-left" src="{{ url_for('static', filename='image/ballbuster.gif') }}">
         </div>
     </div>

@@ -3,7 +3,7 @@
 {% block title %} Coxy {% endblock %}
 
 {% block head %}
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/home.css') }}">
 {% endblock %}
 
 {% block content %}
@@ -12,9 +12,15 @@
         <h1 class="welcome-object" id="welcome-header">Welcome...</h1>
         <p class="welcome-object" id="welcome-para">...to the big show!</p>
         <ol id="nav-list">
-            <a href="{{ url_for('about') }}"><li class="nav-list-item">About</li></a>
-            <a href="{{ url_for('work') }}"><li class="nav-list-item">Portfolio</li></a>
-            <a href="{{ url_for('contact') }}"><li class="nav-list-item">Contact</li></a>
+            <a href="{{ url_for('about') }}">
+                <li class="nav-list-item">About</li>
+            </a>
+            <a href="{{ url_for('work') }}">
+                <li class="nav-list-item">Portfolio</li>
+            </a>
+            <a href="{{ url_for('contact') }}">
+                <li class="nav-list-item">Contact</li>
+            </a>
         </ol>
     </div>
 </main>
