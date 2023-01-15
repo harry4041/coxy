@@ -2,8 +2,23 @@
 
 {% block title %}Contact{% endblock %}
 
+{% block head %}
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/contact.css') }}">
+{% endblock %}
+
 {% block content %}
-    <h1>Contact</h1>
-    <h2>Welcome to FlaskApp!</h2>
-    <h3>{{ utc_dt }}</h3>
+    <main id="main">
+    <div id="welcome-section">
+        <h1 class="welcome-object" id="welcome-header">Get in touch...</h1>
+
+        <div class="socials">
+            <a href="https://www.facebook.com/harryrjcox" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/harry-cox-3bb158207/" class="fa fa-linkedin"></a>
+        </div>
+
+    </div>
+
+</main>
 {% endblock %}
