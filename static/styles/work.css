@@ -1,13 +1,23 @@
 .project{
     padding: 25px 0px;
     width: 100vw;
-    height: 350px;
+    height: 300px;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     flex-direction: row;
-    border-top: 1px black solid;
+
     border-left: 1px black solid;
+}
+
+p{
+    font-size: 12px;
+}
+
+.github{
+    font-style: underline;
+    color: blue;
+    font-size: 12px;
 }
 
 .project-description{
@@ -15,7 +25,7 @@
 }
 
 .project-image{
-max-width: 600px;
+max-width: 430px;
 max-height: -webkit-fill-available;
 }
 
