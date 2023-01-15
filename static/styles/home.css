@@ -17,7 +17,7 @@
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
-#welcome-header, #contact-header{
+#welcome-header{
   display: flex;
   justify-content: space-between;
   align-items: center;

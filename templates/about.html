@@ -2,8 +2,20 @@
 
 {% block title %}About{% endblock %}
 
+{% block head %}
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/about.css') }}">
+{% endblock %}
+
 {% block content %}
-    <h1>About</h1>
-    <h2>Welcome to FlaskApp!</h2>
-    <h3>{{ utc_dt }}</h3>
+<main id="main">
+    <div id="welcome-section">
+        <div>
+             <img class="project-image project-right" style="width:460px;" src="{{ url_for('static', filename='image/pixel-picker.png') }}">
+        </div>
+        <div>
+            <h1 class="welcome-object" id="welcome-header">Who am I?</h1>
+            <p class="welcome-object" id="welcome-para">.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        </div>
+    </div>
+</main>
 {% endblock %}
