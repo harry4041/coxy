@@ -5,7 +5,9 @@
   margin: 0px;
 }
 
-#welcome-section, #contact{
+#welcome-section{
+  position: absolute;
+  top: -60px;
   display: flex;
   flex-direction: column;
   justify-content: center;

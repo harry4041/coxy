@@ -12,6 +12,10 @@
     max-width: 500px;
 }
 
+.project-image{
+max-width: 600px;
+}
+
 .lightgray-section{
     background: lightgray;
 }
