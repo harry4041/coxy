@@ -67,6 +67,10 @@ max-height: -webkit-fill-available;
     to {transform: translateX(0px); opacity: 100;}
 }
 
+#grapple{
+min-width: 500px;
+}
+
 @media only screen and (max-width: 1150px) {
   .content{
   display: flex;
@@ -92,6 +96,9 @@ max-height: -webkit-fill-available;
   }
   .project-left, project-right{
     padding: 10px;
+}
+#grapple{
+min-width: 100px;
 }
 }
 
