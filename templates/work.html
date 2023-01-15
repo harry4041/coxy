@@ -7,44 +7,73 @@
 {% endblock %}
 
 {% block content %}
-<div class="project light-gray-section" id="first-section">
-    <div class="project-info project-left">
-        <h3 class="project-title">Pixel perfect</h3>
-        <p class="project-description">
-            Pixel perfect is a web game where you try your luck at picking the winning pixel. To play you have to
-            create an account then choose a pixel. There is only a limited amount so get in there quick before
-            someone else snaps up your lucky number! At the end of the month a pixel is chosen at random and
-            the person who owns that pixel wins.
-        </p>
-        <p class="project-description">
-            Users are created and sign in using flask_auth along with SQLAlchemy. When they choose a pixel, that pixels
-            coordinates are saved against their profile.
-        </p>
-        <h5>Technologies</h5>
-        <p style="font-style: italic;">Python flask, python auth, SQLAlchemy, HTML, CSS, JavaScript</p>
-        <a class="github" href="https://github.com/harry4041/pixel-picker">Github</a>
-    </div>
-    <img class="project-image project-right" style="width=460" src="{{ url_for('static', filename='image/pixel-picker.png') }}">
-</div>
-
-<div class="project gray-section" id="second-section">
-    <img class="project-image project-left" src="{{ url_for('static', filename='image/grapple.gif') }}">
-    <div class="project-info project-left">
-        <h3 class="project-title">Grapple</h3>
-        <p class="project-description">
-            An ongoing project utilising systems built in to the Unity game engine to create a smooth, fast FPS game.
-        </p>
-        <h5>Technologies</h5>
-        <p style="font-style: italic;">Unity, C#</p>
+<div class="section gray-section">
+    <div class="project" id="first-section">
+        <div class="project-info project-left">
+            <h3 class="project-title">Pixel perfect</h3>
+            <p class="project-description">
+                Pixel perfect is a web game where you try your luck at picking the winning pixel. To play you have to
+                create an account then choose a pixel. There is only a limited amount so get in there quick before
+                someone else snaps up your lucky number! At the end of the month a pixel is chosen at random and
+                the person who owns that pixel wins.
+            </p>
+            <p class="project-description">
+                Users are created and sign in using flask_auth along with SQLAlchemy. When they choose a pixel, that pixels
+                coordinates are saved against their profile.
+            </p>
+            <h5>Technologies</h5>
+            <p style="font-style: italic;">Python flask, python auth, SQLAlchemy, HTML, CSS, JavaScript</p>
+            <br>
+            <a class="github" href="https://github.com/harry4041/pixel-picker">Github</a>
+        </div>
+        <img class="project-image project-right" style="width=460" src="{{ url_for('static', filename='image/pixel-picker.png') }}">
     </div>
 </div>
 
-<div id="mobile-games">
-    <div class="project light-gray-section" id="third-section">
-    <div class="smaller-images">
+<div class="section light-gray-section">
+    <div class="project" id="second-section">
+        <img class="project-image project-left" src="{{ url_for('static', filename='image/grapple.gif') }}">
+        <div class="project-info project-right">
+            <h3 class="project-title">Grapple</h3>
+            <p class="project-description">
+                An ongoing project utilising systems built in to the Unity game engine to create a smooth, fast FPS game.
+            </p>
+            <h5>Technologies</h5>
+            <p style="font-style: italic;">Unity, C#</p>
+        </div>
+    </div>
+</div>
+
+<div class="section gray-section">
+<div class="project" id="third-section">
+    <div class="project-info project-left">
+        <h3 class="project-title">Twitter-bots</h3>
+        <p class="project-description">
+            The road I travel the most is closed for roughly 3 months of the year due to flooding, and it isn't announced
+            anywhere that it's flooded. I also am not a fan  of getting to my car in the morning and realising too late
+            that the windscreen is frozen. Therefore I made a twitter-bot that tweets out every day at 5am telling me
+            if I have to deal with these things.
+        </p>
+        <p class="project-description">
+            Sadly these ceased to tweet in November as the Heroku package I was using started to charge, and it didn't
+            seem financially worth it!
+        </p>
+        <h5>Technologies</h5>
+        <p style="font-style: italic;">Python, tweepy, API's</p>
+        <br>
+        <a class="github" href="https://twitter.com/FloodBotCambs">Twitter (Cambridgeshire)</a>
+        <a class="github" href="https://twitter.com/FloodBotLincs">Twitter (Lincolnshire)</a>
+    </div>
+        <img class="project-image project-right" src="{{ url_for('static', filename='image/twitterbot.png') }}">
+</div>
+</div>
+
+<div class="section light-gray-section">
+    <div class="project" id="fourth-section">
+        <div class="smaller-images">
             <img class="project-image project-left" src="{{ url_for('static', filename='image/bounce.gif') }}">
-    </div>
-    <div class="project-info project-right">
+        </div>
+        <div class="project-info project-right">
         <h3 class="project-title">Bounce</h3>
         <p class="project-description">
             Bounce is a mobile game where the player controls the bottom ball with their finger and triess to stop the
@@ -59,20 +88,23 @@
         <p style="font-style: italic;">Unity, C#, Firebase</p>
     </div>
 </div>
-
-<div class="project light-gray-section" id="fourth-section">
-    <div class="smaller-images">
-            <img class="project-image project-left" src="{{ url_for('static', filename='image/ballbuster.gif') }}">
-    </div>
-    <div class="project-info project-right">
-        <h3 class="project-title">Block buster</h3>
-        <p class="project-description">
-            My take on the classic block buster game.
-        </p>
-        <h5>Technologies</h5>
-        <p style="font-style: italic;">Unity, C#</p>
-    </div>
 </div>
+
+<div class="section gray-section">
+    <div class="project" id="fifth-section">
+        <div class="project-info project-right">
+            <h3 class="project-title">Block buster</h3>
+            <p class="project-description">
+            My take on the classic block buster game. Made in C# utilising a strict workflow and instantiating in specific
+            locations.
+            </p>
+            <h5>Technologies</h5>
+            <p style="font-style: italic;">Unity, C#</p>
+        </div>
+         <div class="smaller-images">
+            <img class="project-image project-left" src="{{ url_for('static', filename='image/ballbuster.gif') }}">
+        </div>
+    </div>
 </div>
 
 {% endblock %}
