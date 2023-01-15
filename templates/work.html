@@ -10,21 +10,40 @@
 <div class="project lightgray-section" id="first-section">
     <div class="project-info project-left">
         <h3 class="project-title">Pixel picker</h3>
-        <p class="project-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <p class="project-description">
+            Pixel picker is a web game where you try your luck at picking the winning pixel. To play you have to
+            create an account then choose a pixel. There is only a limited amount so get in there quick before
+            someone else snaps up your lucky number! At the end of the month a pixel is chosen at random and
+            the person who owns that pixel wins.
+        </p>
+        <p class="project-description">
+            Users are created and sign in using flask_auth along with SQLAlchemy. When they choose a pixel, that pixels
+            co-ordinates are saved against their profile.
+        </p>
         <h5>Technologies</h5>
-        <p style="font-style: italic;">Python flask, python auth, HTML, CSS, JavaScript</p>
+        <p style="font-style: italic;">Python flask, python auth, SQLAlchemy, HTML, CSS, JavaScript</p>
     </div>
-    <img class="project-image project-right" src="{{ url_for('static', filename='image/testimage.png') }}">
+    <img class="project-image project-right" src="{{ url_for('static', filename='image/pixel-picker.png') }}">
 </div>
+
 <div class="project gray-section" id="Second-section">
-    <img class="project-image project-left" src="{{ url_for('static', filename='image/testimage.png') }}">
+    <img class="project-image project-left" src="{{ url_for('static', filename='image/bounce.gif') }}">
     <div class="project-info project-right">
         <h3 class="project-title">Bounce</h3>
-        <p class="project-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <p class="project-description">
+            Bounce is a mobile game where the player controls the bottom ball with their finger and trys to stop the
+            bouncing ball from getting past. If it does then it's game over and time to start again.
+        </p>
+        <p class="project-description">
+            Though a simple game up front, it utilises a firebase realtime database to check if a user has played
+            from their device before, create a user tied to that device if not, and save/retrieve score data. Some of this
+            is tied up to the Unity front end to display user top scores.
+        </p>
         <h5>Technologies</h5>
         <p style="font-style: italic;">Unity, C#, Firebase</p>
     </div>
 </div>
+
 <div class="project lightgray-section" id="third-section">
     <div class="project-info project-left">
         <h3 class="project-title">Grapple</h3>
@@ -34,11 +53,12 @@
     </div>
     <img class="project-image project-right" src="{{ url_for('static', filename='image/testimage.png') }}">
 </div>
+
 <div class="project gray-section" id="fourth-section">
     <img class="project-image project-left" src="{{ url_for('static', filename='image/testimage.png') }}">
     <div class="project-info project-right">
         <h3 class="project-title">Ball buster</h3>
-        <p class="project-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <p class="project-description">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
         <h5>Technologies</h5>
         <p style="font-style: italic;">Unity, C#</p>
     </div>
