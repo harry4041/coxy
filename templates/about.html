@@ -4,13 +4,14 @@
 
 {% block head %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/about.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 {% endblock %}
 
 {% block content %}
 <div class="main">
     <div class="welcome-section">
         <div>
-            <img class="project-image project-right" style="width:auto; height:400px"
+            <img id="me" class="project-image project-right"
                  src="{{ url_for('static', filename='image/me.jpg') }}">
         </div>
         <div>
@@ -30,19 +31,26 @@
     </div>
 
 </div>
-<div class="main" style="background: #CCCCCC;">
-    <div class="knolege-section">
-
-        <h1 style="color:black;">What do I know?</h1>
-        <p class="welcome-object welcome-para" style="color:black;">
-            Currently based in Cambridgeshire, I spend a lot of my time working on personal projects. These range from
-            web pages
-            to Unity games to even some more hands on, mechanical projects like fixing up motorbikes. Though I've never
-            had a
-            professional career working as a developer, that is what I am striving for. After all, they say if you love
-            what you do
-            you'll never work a day in your life.
-        </p>
+<div class="main second-main">
+    <div class="welcome-section knolege-section">
+        <div>
+            <h1 style="color:white;">What do I know?</h1>
+            <p class="welcome-object welcome-para">
+                Although I spend most of my time witgh the Unity game engine, I'm always up for learning new
+                technologies.
+            </p>
+            <ol id="tech-stack">
+                <li class="tech"><div class="list-content">Untiy </div><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span> </li>
+            <li class="tech"><div class="list-content">Unity C# </div><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span> </li>
+            <li class="tech"><div class="list-content">HTML </div><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span> </li>
+            <li class="tech"><div class="list-content">CSS </div><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span> </li>
+            <li class="tech"><div class="list-content">JavaScript </div><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span> </li>
+            <li class="tech"><div class="list-content">Python </div><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span> </li>
+            <li class="tech"><div class="list-content">Git </div><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star"></span><span class="fa fa-star"></span> </li>
+            <li class="tech"><div class="list-content">Heroku </div><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span><span class="fa fa-star"></span> </li>
+            <li class="tech"><div class="list-content">Digital Ocean </div><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span><span class="fa fa-star"></span> </li>
+        </ol>
+        </div>
 
     </div>
 
